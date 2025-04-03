@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper responsive behavior on mobile devices -->
-    <title>HomePage</title> <!-- Sets the title of the webpage -->
-    <link href="css/styles.css" rel="stylesheet"> <!-- Links the external CSS file -->
-    <script src="scripts/javascript.js"></script> <!-- Links the external JS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slovak Charity Foundation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <!-- Header Section with Logo -->
-    <header>
-        <h1>Website Header</h1> <!-- Main title of the website -->
-        <img src="images/logo.png" alt="Logo" class="logo"> <!-- Displays a logo image aligned to the right -->
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Slovak Charity Foundation Logo"> <!-- Add your logo here -->
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a> <!-- Navigation link to About page -->
-        <a href="pages/aboutus.html">AboutUs</a> <!-- Navigation link to About page -->
-        <a href="pages/members.html">Members</a> <!-- Navigation link to Membership page -->
-        <a href="pages/courses.html">Courses</a> <!-- Navigation link to Course page -->
-         <a href="pages/educationgames.html">EducationGames</a> <!-- Navigation link to educationgames page -->
-        <a href="pages/events.html">Events</a> <!-- Navigation link to Event page -->
-    </nav>
+    <!-- Main Section: Introduction -->
+    <section class="main">
+        <h1>Welcome to the  Slovenské Vzdelávacie Centrum</h1>
+        <p>
+            The  Slovenské Vzdelávacie Centrum is dedicated to improving the lives of vulnerable communities in Slovakia through education, health care, and social welfare programs.
+        </p>
+        <img src="https://c.tenor.com/gD5aDY0z0moAAAAC/slovakia-flag.gif" alt="Charity Work in Slovakia" class="main-image"> <!-- Example image -->
+    </section>
 
-  <!-- Main Content Area with Two Sections -->
-  <main class= mainpage>
-      <h2>Welcome to Our Website</h2> <!-- Main heading for content section -->
-      <p>This is the main content area where information is displayed.</p> <!-- Short description of the page --> 
+    <!-- About Us Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+     Who We Are-
 
-     <div class="sections"> <!-- Container to hold two sections side by side -->
-        <section class="section">
-            <h3>Section 1</h3> <!-- Heading for the first section -->
-            <p>Content for the first section.</p> <!-- Description inside first section -->
-        </section> 
-        <section class="section">
-            <h3>Section 2</h3> <!-- Heading for the second section -->
-            <p>Content for the second section.</p> <!-- Description inside second section -->
-        </section>
-     </div>
-  </main>
+Slovenské Vzdelávacie Centrum – South Manchester is a registered charity dedicated to preserving and promoting Slovak language and culture. We provide Slovak language education and organize cultural and community activities to help Slovak-speaking families maintain their heritage while living abroad.
 
-  <!-- Footer Section -->
-  <footer>
-      <p>&copy; 2025 Simple Layout. All rights reserved.</p> <!-- Footer copyright information -->
-  </footer>
+While our primary focus is on supporting Slovak-speaking children and families, we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions. Beyond our Saturday school, we offer various workshops, events, and social activities where individuals of all ages can connect, learn, and take part in our cultural community.
+        </p>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate">
+        <h2>How You Can Help</h2>
+        <p>Your generous donations help us provide food, shelter, and education for those in need.</p>
+        <a href="donate.html" class="donate-btn">Donate Now</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Have questions? Feel free to reach out to us through the following channels:
+        </p>
+        <p>Email: contact@slovakcharity.sk</p>
+        <p>Phone: +421 123 456 789</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Slovak Charity Foundation - All Rights Reserved</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </footer>
+
 </body>
-</html> 
-  
-    
-            
-            
+</html>
