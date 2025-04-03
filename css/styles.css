@@ -1,88 +1,126 @@
-/* Reset default margin and padding for a consistent layout */
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-     font-family: Arial, sans-serif; /* Sets the default font style */
-     margin: 0;
-     padding: 0;
-     text-align: center; /* Centers text globally */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header Styling */
 header {
-    display: flex; /* Uses flexbox for layout */
-    justify-content: space-between; /* Aligns items vertically */
-    align-items: center; /* Aligns items vertically */
-    padding: 20px;
-    background-color: #f4f4f4; /* Light grey background */
-    border-bottom: 2px solid #ddd; /* Adds a subtle bottom border */
+    background-color: #D32F2F; /* Slovakian red color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Logo Styling */
-.logo {
-    max-width: 100px; /* Restricts logo size */
+header .logo img {
+    width: 150px;
 }
 
-/* Navigation Bar Styling */
-nav {
-    background-color: #333; /* Dark background for contrast */
-    padding: 10px;
+nav ul {
+    list-style: none;
+    margin-top: 20px;
 }
 
-nav a { 
-    color: white; /* Sets text color */
-    text-decoration: none; /* Removes underline from links */
-    margin: 0 10px; /* Adds spacing between links */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Main Content Section Styling */
-.mainpage {
-    background-color: black;
-    color: white; /* Ensures text is visible */
-    padding: 20px; /* Optional: Adds spacing inside */
-}
-.content {
-    background-color: #f9f9f9; /* Light gray background */
-    paddding: 20px; /* Add space inside the main section */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center; /* Center text */
-    width: 100%; /* Full width */
-    max-width: 100%; /* Ensure it doesnt exceed the viewport */
-    margin: 0 auto; /* Center horizontally */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    border: 2px solid #2c3e50; /* Dark blue-gray border */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.content h2 {
-     color: #333; /* Dark gray color for heading */
-     font-size: 24px; /* Adjust font size */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.content p {
-     color: #666; /* Medium gray for paragraph text */
-     font-size: 16px; /* Adjust font size */
-     line-height: 1.5; /* Improve readability */
-     max-width: 80%; /* Limit text width for better readabilty */
-     margin: 0 auto; /* center text */
+.main {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-
-.section {
-     display: flex; /* Enables side-by-side layout */
-     justify-content: space-around; /* Spaces sections evenly */
-     padding: 20px;
+.main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-/* Individual Section Styling */
-.section {
-     width: 45%; /* Sets equal width for both sections */
-     padding: 20px;
-     border: 1px solid #ddd; /* Adds a subtle border */
-     background-color: #f9f9f9; /* Light background for readabilty */
+.main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-/* Footer Styling */
+.main-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.about {
+    background-color: #e9ecef;
+}
+
+.donate {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+}
+
+.donate-btn {
+    background-color: #ffc107;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.donate-btn:hover {
+    background-color: #ffca2c;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
 footer {
-    background-color: #333; /* Matches nav bar */
-    color: white; /* While text for contrast */  
-    padding: 10px;
-    position: relative;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
